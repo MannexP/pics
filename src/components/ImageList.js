@@ -1,5 +1,6 @@
 import React from "react";
 import './ImageList.css';
+import ImageCard from './ImageCard';
 // Here props is the object that was passed from App.js "images" ******************1imageList"
 
 const ImageList = props => {
@@ -7,7 +8,7 @@ const ImageList = props => {
   const images = props.images.map(banana1 => {
 
     //    key is added to lists that are rendered to dom. They key prop is added to root elements that are to be rendered. READ BELOW #244
-    return <img alt ={banana1.description}  key={banana1.id} src={banana1.urls.regular} />;
+    return <ImageCard  key={banana1.id} banana1={banana1} />;
 
 // *****************************************************************************
 // You CAN ALSO DESTRUCTURE THE PROP, BY ENTERTING THE PARAMATERS AND REFERENCING THEM DIRECTLY
