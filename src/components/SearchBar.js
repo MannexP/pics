@@ -19,7 +19,7 @@ export default class SearchBar extends Component {
             <input
               type="text"
               value={this.state.term}
-              onChange={e => this.setState({ term: e.target.value.toUpperCase()  })}
+              onChange={e => this.setState({ term: e.target.value  })}
             />
           </div>
         </form>
