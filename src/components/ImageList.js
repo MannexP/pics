@@ -5,7 +5,7 @@ import ImageCard from './ImageCard';
 
 const ImageList = props => {
   // map through props and save to images variable
-  const images = props.images.map(banana1 => {
+  const images = props.images.map((banana1) => {
 
     //    key is added to lists that are rendered to dom. They key prop is added to root elements that are to be rendered. READ BELOW #244
     return <ImageCard  key={banana1.id} banana1={banana1} />;
