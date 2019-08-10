@@ -8,10 +8,14 @@ class ImageCard extends React.Component {
     }
 
     componentDidMount() {
-        console.log(this.banana1Ref
-            )
+        this.banana1Ref.current.addEventListener('load', this.makesSpanHeight);
+        //                                                second arguement or callback
+    }
+
+    makesSpanHeight = () => {
         console.log(this.banana1Ref.current.clientHeight);
     }
+
   render() {
       const {description, urls } = this.props.banana1;
 
